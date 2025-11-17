@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ET Money Style Landing Page</title>
+<style>
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f5f5f5;
+  color: #111;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #0e0e0e;
+  color: #fff;
+}
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+.hero {
+  display: flex;
+  padding: 60px 40px;
+  background: #fff;
+}
+.hero-left {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+}
+.hero-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+}
+.cta-box {
+  background: #5fb56d;
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 420px;
+  color: #fff;
+}
+.cta-box h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+}
+.cta-box button {
+  margin-top: 20px;
+  padding: 14px 30px;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.section {
+  padding: 80px 40px;
+  background: #e9f0f0;
+}
+.section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.section p {
+  max-width: 600px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+.mock-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 900px;
+}
+.graph-section {
+  display: flex;
+  padding: 80px 40px;
+  background: #eef6f5;
+  align-items: center;
+}
+.graph-left {
+  flex: 1;
+}
+.graph-right {
+  flex: 1;
+  padding-left: 40px;
+}
+.graph-right h2 {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+.funnel-section {
+  display: flex;
+  align-items: center;
+  padding: 120px 40px;
+  background: #e9f3fa;
+}
+.funnel-left {
+  flex: 1;
+}
+.funnel-right {
+  flex: 1;
+  text-align: center;
+}
+.hero-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 1200px; /* match nav width */
+  margin: 0 auto;
+}
+
+.hero-left {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cta-box {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  z-index: 10;
+}
+
+</style>
+</head>
+<body>
+<header>
+  <div>ET Money</div>
+  <nav>
+    <a href="#">Mutual Funds</a>
+    <a href="#">Genius</a>
+    <a href="#">Stocks</a>
+    <a href="#">NPS</a>
+    <a href="#">More</a>
+    <a href="#">My Account</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <img class="hero-left" src="https://img.smartspends.com/static/images/landing/home-page/banner-image.jpg"alt="Hero Image" width="700"; height="auto"/>
+  <div class="hero-right">
+    <div class="cta-box" style="z-index: 1000;">
+      <h1>Invest in the freedom to choose</h1>
+      <p>Wealth is not just about money. It's about what all you can do with it. Living your own story of progress.</p>
+      <button>Get started</button>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Live your choices.</h2>
+  <p>When you are free to choose, the possibilities are endless. Whatever you want from life, pursue it.</p>
+  <img src="https://img.smartspends.com/static/images/landing/home-page/goal-1.jpg" width="900" height="400" alt="Live Your Choices Graphic" />
+</section>
+
+<section class="graph-section">
+  <div class="graph-left">
+    <div class="mock-box" style="height:260px;"></div>
+  </div>
+  <div class="graph-right">
+    <h2>Get there with suitable fund options</h2>
+    <p>Guided investing with clarity and confidence.</p>
+  </div>
+</section>
+
+<section class="funnel-section">
+  <div class="funnel-left">
+    <h2>Simplified data for amplified returns</h2>
+    <p>Useful insights presented in a simplified manner to help you filter noise.</p>
+  </div>
+  <div class="funnel-right">
+    <img src="https://www.etmoney.com/static/images/home/simply-data.png" width="400" height="400" alt="Simplified Data Graphic" />
+  </div>
+</section>
+
+</body>
+</html>
+<!-- Genius Section -->
+<section class="genius-section">
+  <div class="genius-left">
+    <img src="https://www.etmoney.com/static/images/home/genius-logo.svg" alt="ET Money Genius" class="genius-logo" />
+    <h1>Leave no room for second guessing</h1>
+    <p>Right investing decisions can alter the story of one's life. That's why one seeks approvals and assurances from others. ET Money Genius removes fears and anxieties by bringing method to your investing.</p>
+    <p>And helps you <span class="highlight">invest like a pro.</span></p>
+    <button class="genius-btn">Know more about Genius</button>
+  </div>
+  <div class="genius-right " >
+   <img src="https://img.smartspends.com/static/images/landing/home-page/g-genius-without-texture.png" width="766" height="580" loading="lazy" alt="ET Money Genius Graphic" class="genius-graphic" />
+  </div>
+</section>
+
+<style>
+.genius-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 120px;
+  background: #2d0a46;
+  color: #fff;
+}
+.genius-left {
+  max-width: 480px;
+}
+.genius-left h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.genius-left p {
+  font-size: 18px;
+  margin-bottom: 12px;
+  opacity: 0.9;
+}
+.highlight {
+  color: #e2c675;
+}
+.genius-btn {
+  background: #e2c675;
+  padding: 14px 28px;
+  border-radius: 40px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.genius-right .genius-graphic {
+  width: 420px;
+}
+</style>
+
