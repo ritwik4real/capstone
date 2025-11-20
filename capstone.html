@@ -21,10 +21,23 @@ header {
 }
 nav a {
   margin: 0 15px;
+   justify-content: flex-start;
+  left: 100px;
   text-decoration: none;
   color: #fff;
   font-size: 14px;
 }
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #5fb56d;
+  margin-right: auto; 
+}
+nav {
+  display: flex;
+  gap: 25px; 
+}
+
 .hero {
   display: flex;
   padding: 60px 40px;
@@ -132,21 +145,394 @@ nav a {
   left: 50%;
   z-index: 10;
 }
+button,
+.cta-box button,
+.navbar button {
+  transition: background-color .25s, border-color .25s, transform .25s;
+}
 
+button:hover,
+.cta-box button:hover,
+.navbar button:hover {
+  background-color: #0aff9d;
+  border-color: #0aff9d;
+  transform: translateY(-2px);
+}
+button:active,
+.cta-box button:active,
+.navbar button:active {
+  transform: translateY(0);
+  transform: scale(0.98);}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #0e0e0e;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1001;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  margin-right: 12px;
+}
+a:hover {
+  color:#5fb56d;
+}
+
+}
+.mega {
+  position: relative;
+}
+
+.mega-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 420px;
+  background: #f5f6f7;
+  padding: 28px 32px;
+  display: none;
+  box-shadow: 0 4px 20px rgba(0,0,0,.15);
+}
+
+.mega:hover .mega-menu {
+  display: block;
+}
+
+.mega-menu .item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 0;
+}
+
+.mega-menu img {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  opacity: .9;
+}
+
+.mega-menu hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.mega-menu .label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+
+
+.pricing-section {
+    display: flex;
+    gap: 20px;
+}
+
+.price {
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.price:hover {
+    transform: scale(1.05);
+}
+
+.price h2 {
+    color: #333;
+}
+
+.price p {
+    color: #666;
+}
+/* Mutual Funds Mega Dropdown */
+.mega-dropdown {
+  position: relative;
+}
+
+.mega-dropdown > a::after {
+  content: "▼";
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+.mega-dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 320px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  padding: 24px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.mega-dropdown:hover .mega-dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Checkbox Items */
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #000; /* Black text */
+}
+
+.checkbox-item:hover {
+  color: #5fb56d;
+}
+
+.checkbox-item input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #5fb56d;
+}
+
+.checkbox-item label {
+  color: #000; 
+  cursor: pointer;
+}
+
+/* Divider */
+.mega-divider {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 20px 0;
+}
+
+/* Section Headers */
+.section-header {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000; 
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Fund Type Grid */
+.fund-types {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.fund-type-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #000; /* Black text */
+}
+
+.fund-type-item:hover {
+  background: #f5f5f5;
+}
+
+.fund-type-item input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #5fb56d;
+}
+
+.fund-type-item label {
+  color: #000; /* Black text */
+  cursor: pointer;
+}
+
+/* My Account Dropdown */
+.account-dropdown {
+  position: relative;
+}
+
+.account-dropdown-content {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 280px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  padding: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.account-dropdown:hover .account-dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Search Bar */
+.search-bar {
+  padding: 16px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #000;
+  background: #f8f8f8;
+}
+
+.search-bar input::placeholder {
+  color: #666;
+}
+
+/* Dropdown Items */
+.dropdown-item {
+  display: block;
+  padding: 16px 20px;
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f8f8;
+  color: #5fb56d;
+}
+
+.dropdown-item:last-child {
+  border-bottom: none;
+}
+
+/* Section Divider */
+.dropdown-divider {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 0;
+}
+
+/* Login/Sign-up Section */
+.login-section {
+  background: #f8f8f8;
+  border-radius: 12px 12px 0 0;
+}
+
+.login-section .dropdown-item {
+  font-weight: 600;
+  color: #5fb56d;
+}
+
+.login-section .dropdown-item:hover {
+  background-color: #e8f5e8;
+}
 </style>
 </head>
 <body>
 <header>
   <div>ET Money</div>
-  <nav>
-    <a href="#">Mutual Funds</a>
+  
+    <a href="#"></a>
+     <div class="mega-dropdown">
+  <a href="#" class="nav-link" style="margin-right: 24px;">Mutual Funds</a>
+  <div class="mega-dropdown-content">
+    <div class="checkbox-item">
+      <input type="checkbox" id="invest-funds" checked>
+      <label for="invest-funds">Invest in Mutual Funds</label>
+    </div>
+    <div class="checkbox-item">
+      <input type="checkbox" id="investor-personality">
+      <label for="investor-personality">Know your Investor Personality</label>
+    </div>
+    <div class="checkbox-item">
+      <input type="checkbox" id="explore-funds">
+      <label for="explore-funds">Explore Mutual Funds</label>
+    </div>
+    <div class="checkbox-item">
+      <input type="checkbox" id="portfolio-health">
+      <label for="portfolio-health">Check Portfolio Health</label>
+    </div>
+    
+    <div class="mega-divider"></div>
+    
+    <div class="section-header">Find mutual funds by type</div>
+    
+    <div class="fund-types">
+      <div class="fund-type-item">
+        <input type="checkbox" id="equity-funds">
+        <label for="equity-funds">Equity funds</label>
+      </div>
+      <div class="fund-type-item">
+        <input type="checkbox" id="debt-funds">
+        <label for="debt-funds">Debt funds</label>
+      </div>
+      <div class="fund-type-item">
+        <input type="checkbox" id="hybrid-funds">
+        <label for="hybrid-funds">Hybrid funds</label>
+      </div>
+    </div>
+  </div>
+</div>
     <a href="#">Genius</a>
     <a href="#">Stocks</a>
     <a href="#">NPS</a>
     <a href="#">More</a>
-    <a href="#">My Account</a>
-  </nav>
+    <div class="account-dropdown">
+  <a href="#" class="nav-link">My Account</a>
+  <div class="account-dropdown-content">
+    <div class="search-bar">
+      <input type="text" placeholder="Search for Stocks, Mutual Funds...">
+    </div>
+    
+    <div class="login-section">
+      <a href="#" class="dropdown-item">Login / Sign-up</a>
+    </div>
+    
+    <a href="#" class="dropdown-item">My investments</a>
+    <a href="#" class="dropdown-item">My SIPs</a>
+    <a href="#" class="dropdown-item">My Watchlist</a>
+    <a href="#" class="dropdown-item">My transactions</a>
+    
+    <div class="dropdown-divider"></div>
+    
+    <a href="#" class="dropdown-item">Track external mutual funds</a>
+  </div>
+</div>
+  
 </header>
+
+
 
 <section class="hero">
   <img class="hero-left" src="https://img.smartspends.com/static/images/landing/home-page/banner-image.jpg"alt="Hero Image" width="700"; height="auto"/>
@@ -159,17 +545,32 @@ nav a {
   </div>
 </section>
 
-<section class="section">
-  <h2>Live your choices.</h2>
-  <p>When you are free to choose, the possibilities are endless. Whatever you want from life, pursue it.</p>
+<section class="section" style="text-align: center; font-family: big caslow;">
+  <h2 style="font-size: 80px;">Live your choices.</h2>
+  <p style="text-align: center; margin:auto; font-size: 30px;">When you are free to choose, the possibilities are endless. Whatever you want from life, pursue it.</p>
   <img src="https://img.smartspends.com/static/images/landing/home-page/goal-1.jpg" width="900" height="400" alt="Live Your Choices Graphic" />
 </section>
 
 <section class="graph-section">
   <div class="graph-left">
-    <div class="mock-box" style="height:260px;"></div>
+    <section class="pricing-section">
+  <article class="price">
+    <h2>₹99</h2>
+    <p>Basic Plan</p>
+  </article>
+  <article class="price">
+    <h2>₹199</h2>
+    <p>Standard Plan</p>
+  </article>
+  <article class="price">
+    <h2>₹299</h2>
+    <p>Premium Plan</p>
+  </article>
+</section>
   </div>
+  
   <div class="graph-right">
+    
     <h2>Get there with suitable fund options</h2>
     <p>Guided investing with clarity and confidence.</p>
   </div>
